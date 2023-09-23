@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+    backend:
+        build: .
+        image: ds-env
+        platform: linux/amd64
+        container_name: mylab
+        ports:
+            - "8888:8888"
+        volumes:
+            - ./mylab:/work
